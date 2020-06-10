@@ -1,0 +1,470 @@
+@media (max-width: 1024px) {
+    .header__menu {
+        .menu__foto {
+            height: 60px;
+        }
+
+        .menu__users {
+            padding: 0 70px 0 20px;
+        }
+    }
+
+    .graphic__graphic{
+        .graphic__box {
+            .graphic__img {
+                width: 430px;
+                height: 130px;
+            }
+
+            .graphic__list_month{
+                width: 480px;
+
+                li {
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    .graphic__holder {
+        img {
+            padding: 15px 0;
+        }
+    }
+
+    .customers__task {
+        .graphic__holder_progress {
+            width: 178px;
+        }
+    
+        .graphic__holder_shipments{
+            width: 178px;
+
+            img {
+                width: 150px;
+            }
+        }
+    }
+
+    .search-people {
+        width: 100px;
+    }
+
+    .aside__social{
+        .social__link {
+            width: 150px;
+        }
+    }
+
+    .aside__users {
+        height: 428px;
+        overflow: scroll;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .header__mobile {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header__menu {
+        .menu__button {
+            .button {
+                width: 3em;
+                height: 3em;
+            }
+        }
+
+        .menu__search {
+            width: 200px;
+
+            .search {
+                width: 190px;
+                margin: 0.2em auto;
+            }
+
+            .search-icon {
+                display: none;
+            }
+        }
+
+        .menu__foto{
+            display: none;
+        }
+
+        .menu__users {
+            padding: 0 3em 0 1em;
+        }
+    }
+
+    .statistics__add{
+        h2{
+            display: none;
+        }
+    }
+
+    .statistics__add:before {
+        content: '+';
+        font-family: $familyLato;
+        font-size: $sizesBig;
+        font-weight: map-get($font-weights, bold);
+        background: $gradient-color;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+        &:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+    }
+
+    .graphic__graphic {
+        width: 98%;
+    }
+
+    .graphic__holder {
+        display: none;
+    }
+
+    .customers__feed {
+        height: 256px;
+        overflow: scroll;
+    }
+
+    .main__graphic_mobile {
+        width: 100%;
+        padding: 0 10px;
+        display: flex;
+        justify-content: space-around;
+
+        .graphic__holder__mobile {
+            @include graphic__holder;
+            @include boxShadow;
+            width: 185px;
+
+            img {
+                width: 100px;
+                padding: 0.5em;
+            }
+
+            p {            
+                span::before {
+                    top: 8px; 
+                    left: 40px;
+                }
+            }
+            
+            p::before {
+                top: 12px;
+                left: 0;
+            }
+        }
+    }
+
+    .users__card {
+        .name{
+            p{
+                display: none;
+            }
+        }
+
+        .chat__icon{
+            display: none;
+        }
+    }
+
+    .aside__search{
+        .search-people{
+            width: 50px;
+        }
+    }
+
+    .aside__social {
+        flex-direction: row;
+        flex-wrap: wrap;
+        .social__link {
+            flex-direction: column;
+            width: 50px;
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 667px) {
+    .main__graphic_mobile {
+
+        .graphic__holder__mobile {
+            width: 170px;
+
+            img {
+                width: 100px;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 568px) {
+    .header__menu {
+        .menu__search {
+            display: none;
+        }
+    }
+
+    .header__statistics {
+        width: 350px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+
+        .statistics__add {
+            display: none;
+        }
+    }
+
+    .container--inner {
+        flex-direction: column;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .graphic__graphic {
+        width: 100%;
+
+        .graphic__navbar {
+            nav a {
+                padding: 0.5em;
+            }
+        }
+        .graphic__box {
+            .graphic__img {
+                width: 30em;
+                height: 8em;
+            }
+        }
+    }
+
+    .main__customers {
+        flex-direction: column;
+    }
+
+    .customers__feed {
+        width: 100%;
+    }
+
+    .customers__task{
+        width: 100%;
+        margin-top: 1em;
+
+        .task__today {
+            overflow-x: scroll;
+        }
+    }
+
+    .main__graphic_mobile {
+        flex-direction: column;
+
+        .graphic__holder__mobile {
+            width: 100%;
+            text-align: center;
+
+            img {
+                width: 200px;
+                padding: 0.5em;
+            }
+
+            p {            
+                span::before {
+                    top: 8px; 
+                    left: 235px;
+                }
+            }
+            
+            p::before {
+                top: 11px;
+                left: 195px;
+            }
+        }
+    }
+
+    aside {
+        width: 100%;
+        
+    }
+
+    .users__card {
+        .name{
+            p{
+                display: block;
+            }
+        }
+
+        .chat__icon{
+            display: block;
+        }
+    }
+
+    .aside__search{
+        .search-people{
+            width: 300px;
+        }
+    }
+
+    .aside__social {
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        
+        .social__link {
+            flex-direction: row;
+            width: 180px;
+            padding: 1em;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .header__menu{
+        .menu__users{
+            padding: 0;
+            padding-left: 1em;
+            p{
+                display: block;
+            }
+            &:after{
+                display: none;
+            }
+        }
+    }
+
+    .graphic__graphic {
+        .graphic__box {
+            .graphic__img {
+                width: 18em;
+                height: 8em;
+            }
+        }
+    }
+
+    .main__graphic_mobile {
+
+        .graphic__holder__mobile {
+
+            p {            
+                span::before {
+                    top: 8px; 
+                    left: 140px;
+                }
+            }
+            
+            p::before {
+                top: 11px;
+                left: 100px;
+            }
+        }
+    }
+
+    .aside__search{
+        .search-people{
+            width: 230px;
+        }
+    }
+
+    .aside__social {
+        flex-direction: column;
+        flex-wrap: wrap;
+        .social__link {
+            flex-direction: row;
+            width: 200px;
+            padding: 1em;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .header__menu{
+        .menu__users{
+            p{
+                display: none;
+            }
+        }
+    }
+
+    .header__statistics {
+        width: 300px;
+    }
+
+    .graphic__graphic {
+        width: 100%;
+
+        .graphic__navbar {
+            nav a {
+                padding: 0.5em;
+            }
+        }
+        .graphic__box {
+            .graphic__img {
+                width: 15em;
+                height: 8em;
+            }
+        }
+    }
+
+    .main__customers {
+        flex-direction: column;
+    }
+
+    .customers__feed {
+        width: 100%;
+    }
+
+    .customers__task{
+        width: 100%;
+        margin-top: 1em;
+
+        .task__today {
+            overflow-x: scroll;
+        }
+    }
+
+    .main__graphic_mobile {
+
+        .graphic__holder__mobile {
+           
+            p {            
+                span::before {
+                    top: 8px; 
+                    left: 110px;
+                }
+            }
+            
+            p::before {
+                top: 11px;
+                left: 70px;
+            }
+        }
+    }
+
+    aside {
+        width: 100%;
+        
+    }
+
+    .users__card {
+        .name{
+            p{
+                display: block;
+            }
+        }
+    }
+}

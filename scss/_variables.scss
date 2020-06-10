@@ -1,0 +1,27 @@
+$gradient-color: linear-gradient(90deg, rgba(#e1425b, 1) 0%, rgba(#ed755b, 1) 100%);
+$gradient-price: linear-gradient(0deg, rgba(#7284e2, 1) 0%, rgba(#9559b8, 1) 100%);
+$gradientVertical: linear-gradient(0deg, rgba(#e1425b, 1) 0%, rgba(#ed755b, 1) 100%);
+$darkgrey: #777777;
+$lightgrey: #BFBFBF;
+$superLightGrey: #e8e8e8;
+$grey: #f7f7f7;
+
+
+$sizesLogo: calc(30px + 3 * ((100vw - 320px) / 680));
+$sizesBig: calc(19px + 1 * ((100vw - 320px) / 680));
+$sizesMidium: calc(14px + 1 * ((100vw - 320px) / 680));
+$sizesname: calc(13px + 1 * ((100vw - 320px) / 680));
+$sizesSmall: calc(11px + 0.5 * ((100vw - 320px) / 680));
+$sizesLittel: calc(10px + 1 * ((100vw - 320px) / 680));
+$sizeSupelSmall: calc(8px + 1 * ((100vw - 320px) / 680));
+
+
+$familyLato: 'Lato', sans-serif;
+
+
+$font-weights: (
+    "light": 300,
+    "regular": 400,
+    "bold": 700,
+    "black": 900
+);

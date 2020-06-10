@@ -1,0 +1,232 @@
+@mixin navIcon {
+    width: 75px;
+    height: 70px;
+};
+
+@mixin asideIcon {
+    width: 50px;
+    height: 48px;
+};
+
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+};
+
+@mixin triangleRight {
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid #ed755b;
+};
+
+@mixin triangleUp {
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 6px solid #A889E9;
+};
+
+@mixin triangleDown {
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 6px solid #FD5670;
+};
+
+@mixin boxShadow {
+    box-shadow: 1px 0px 6px 15px rgba(232,232,232,1);
+};
+
+@mixin borderBottom {
+    &:after {
+        content:"";
+        position:absolute;
+        bottom:0;
+        left:10%;
+        width:80%;
+        height:2px;
+        background:#f1f1f1;
+    }
+};
+
+@mixin statistics__box {
+    padding: 20px 0;
+    
+    h2{
+        font-size: $sizesSmall;
+        font-family: $familyLato;
+        font-weight: map-get($font-weights, bold);
+        color: $darkgrey;
+    }
+    
+    h3{
+        font-family: $familyLato;
+        font-size: $sizesBig;
+        font-weight: map-get($font-weights, bold);
+        background: $gradient-color;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-top: 5px;
+    }
+    
+    p {
+        position: relative;
+        padding: 5px 5px 5px 8px;
+        font-size: $sizesSmall;
+        font-family: $familyLato;
+        font-weight: map-get($font-weights, bold);
+        color: $lightgrey;
+            
+        span {
+            padding-left: 10px;
+        }
+    
+        span::before {
+            content: '';
+            @include triangleDown; 
+            position: absolute; 
+            top: 8px; 
+            left: 40px;
+        }
+    }
+    
+    p::before {
+        content: '';
+        @include triangleUp;
+        position: absolute;
+        top: 12px;
+        left: 0;
+    }
+};
+
+@mixin graphic__holder {
+    padding: 20px 40px;
+    
+    h2{
+        font-size: $sizesMidium;
+        font-family: $familyLato;
+        font-weight: map-get($font-weights, bold);
+        color: $darkgrey;
+    }
+    
+    h3{
+        font-family: $familyLato;
+        font-size: $sizesBig;
+        font-weight: map-get($font-weights, bold);
+        background: $gradient-color;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-top: 5px;
+    }
+    
+    p {
+        position: relative;
+        padding: 5px 5px 5px 8px;
+        font-size: $sizesSmall;
+        font-family: $familyLato;
+        font-weight: map-get($font-weights, bold);
+        color: $lightgrey;
+            
+        span {
+            padding-left: 10px;
+        }
+    
+        span::before {
+            content: '';
+            @include triangleDown; 
+            position: absolute; 
+            top: 8px; 
+            left: 123px;
+        }
+    }
+    
+    p::before {
+        content: '';
+        @include triangleUp;
+        position: absolute;
+        top: 12px;
+        left: 83px;
+    }
+};
+
+@mixin list__item {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 0;
+    font-size: $sizesSmall;
+    color: $lightgrey;
+    border-bottom: 1px solid #f1f1f1;
+    list-style-type: none;
+
+    &:not(:first-child) {
+        padding-right: 8px;
+    }
+
+    .red {
+        background: $gradient-color;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+    }
+
+    .clock {
+        font-weight: bold;
+
+        &:before {
+            content: "\25F4";
+            padding-right: 5px;
+        }
+    }
+};
+
+@mixin nav__item {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: $sizesLittel;
+    padding-top: 55px;
+
+    &:after {
+        display: none;
+        content: '';
+        @include triangleRight;
+        position: absolute;
+        top: 45px;
+        left: 70px;
+    }
+
+    &:hover {
+
+        &:after {
+            display: block;
+        }
+    }
+};
+
+@mixin boxLink {
+    width: 3em;
+    height: 3em;
+    border-radius: 10px;
+};
+
+@mixin asideLink {
+    display: block;
+    margin: 0 auto;
+    width: 3em;
+    height: 3em;
+};
+
+@mixin graphic__holder_triangle {
+    p{
+        span::before {
+            top: 8px; 
+            left: 119px;
+        }
+    }
+    
+    p::before {
+        top: 12px;
+        left: 79px;
+    }
+}
