@@ -60,13 +60,13 @@
     }
     
     h3{
+        padding-top: 5px;
         font-family: $familyLato;
         font-size: $sizesBig;
         font-weight: map-get($font-weights, bold);
         background: $gradient-color;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        padding-top: 5px;
     }
     
     p {
@@ -85,7 +85,7 @@
             content: '';
             @include triangleDown; 
             position: absolute; 
-            top: 8px; 
+            top: 9px; 
             left: 40px;
         }
     }
@@ -94,7 +94,7 @@
         content: '';
         @include triangleUp;
         position: absolute;
-        top: 12px;
+        top: 11px;
         left: 0;
     }
 };
@@ -110,13 +110,13 @@
     }
     
     h3{
+        padding-top: 5px;
         font-family: $familyLato;
         font-size: $sizesBig;
         font-weight: map-get($font-weights, bold);
         background: $gradient-color;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        padding-top: 5px;
     }
     
     p {
@@ -135,8 +135,8 @@
             content: '';
             @include triangleDown; 
             position: absolute; 
-            top: 8px; 
-            left: 123px;
+            top: 9px; 
+            left: 121px;
         }
     }
     
@@ -144,8 +144,8 @@
         content: '';
         @include triangleUp;
         position: absolute;
-        top: 12px;
-        left: 83px;
+        top: 11px;
+        left: 81px;
     }
 };
 
@@ -183,9 +183,9 @@
 @mixin nav__item {
     position: relative;
     text-decoration: none;
-    color: #ffffff;
-    font-size: $sizesLittel;
     padding-top: 55px;
+    font-size: $sizesLittel;
+    color: #ffffff;
 
     &:after {
         display: none;
@@ -193,7 +193,7 @@
         @include triangleRight;
         position: absolute;
         top: 45px;
-        left: 70px;
+        left: 68px;
     }
 
     &:hover {
@@ -212,21 +212,21 @@
 
 @mixin asideLink {
     display: block;
-    margin: 0 auto;
     width: 3em;
     height: 3em;
+    margin: 0 auto;
 };
 
 @mixin graphic__holder_triangle {
     p{
         span::before {
-            top: 8px; 
+            top: 9px; 
             left: 119px;
         }
     }
     
     p::before {
-        top: 12px;
+        top: 11px;
         left: 79px;
     }
 }
